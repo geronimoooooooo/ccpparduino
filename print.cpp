@@ -104,6 +104,10 @@ Serial.println(accelgyro.testConnection() ? "MPU9250 connection successful" : "M
 ##########################################
 Serial.print("\t");
 ##########################################
+int bootCount = 2;
+ str= "testLoop";
+  String st= "string s";
+  Serial.println(str + st+": "+String(bootCount));
 ##########################################
 ##########################################
 ##########################################
