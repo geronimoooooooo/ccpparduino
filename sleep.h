@@ -55,6 +55,22 @@ esp_deep_sleep_start();
   esp_bt_controller_disable();
   esp_deep_sleep_start();
 #############################################
+#include <M5Stack.h>
+
+void setup(){  
+  M5.begin();
+  M5.Lcd.println("Setup");
+}
+
+void loop() {
+  if(M5.BtnA.wasPressed()) {    
+    // wake up after 5 seconds
+    esp_sleep_enable_timer_wakeup(5000000); 
+    // start deep sleep. Display goes out!
+    esp_deep_sleep_start();  
+  }
+  M5.update();
+}
 #############################################
 #############################################
 #############################################
