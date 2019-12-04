@@ -114,4 +114,9 @@ or
 for ( ; *p; ++p) *p = tolower(*p);
 
 #####################################################
+COMPARE: 
+http://www.cplusplus.com/reference/cstring/strcmp/
+http://www.cplusplus.com/reference/string/string/compare/
+length: https://stackoverflow.com/questions/44690087/best-way-to-get-length-of-const-char-in-c
+
 #####################################################
