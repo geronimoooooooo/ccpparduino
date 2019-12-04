@@ -71,11 +71,25 @@ String SS ="";
 std::string std= "adf";
 SS=std.c_str();
 
+std::string ---->const char *
+std::string std= "adf";
+std.c_str()
+
+ 
 String------->std::string
 std::string std(SS.c_str())
   
 String------>const char *
-SS.c_str() std.c_str()    
+SS.c_str()    
+ 
+ 
+//make sure const char * is not NULL 
+const char * -----> std::string
+const char* s="hello";
+std::string str = s; || std::string str(s);
+
+const char * ----->String
+?
 #####################################################
 INT--->STRING
 https://stackoverflow.com/questions/191757/how-to-concatenate-a-stdstring-and-an-int
