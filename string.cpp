@@ -73,14 +73,14 @@ SS=std.c_str();
 
 std::string ---->const char *
 std::string std= "adf";
-const char * c = std.c_str();
+const char *c = std.c_str();
 
  
 String------->std::string
 std::string std(SS.c_str())
   
 String------>const char *
-SS.c_str()    
+const char *c = SS.c_str()    
  
  
 //make sure const char * is not NULL 
