@@ -73,7 +73,7 @@ SS=std.c_str();
 
 std::string ---->const char *
 std::string std= "adf";
-std.c_str()
+const char * c = std.c_str();
 
  
 String------->std::string
