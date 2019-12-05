@@ -109,6 +109,10 @@ int bootCount = 2;
   String st= "string s";
   Serial.println(str + st+": "+String(bootCount));
 ##########################################
+  char buffer[75];
+  const char *s2 = "Connecting to new WiFi:";
+  snprintf(buffer, 75, "connecting to: %s", ssid);
+  printAddSimpleLineOfText(buffer);
 ##########################################
 ##########################################
 ##########################################
