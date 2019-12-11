@@ -30,6 +30,22 @@ void print_vector( vector < pair<int, string> > &v){
         }
 }
 ################################################################
+Vector.find()
+    #include<vector>
+    #include<algorithm>
+    #include<iostream>
+
+    int main(){
+        std::vector<int> v{ 1, 2, 3, 4, 4, 3, 7, 8, 9, 10 };
+        int searchme = 4;
+
+        if(find(std::begin(v), std::end(v), searchme) != end(v)){
+            std::cout <<"\n v conatins 3";
+        }
+        else
+            std::cout<<"No match !!";
+        return 0;
+    }
 ################################################################
 ################################################################
 ################################################################
