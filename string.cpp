@@ -64,7 +64,11 @@ string str(arr);
 //  You can also assign directly to a string.
 str = "This is another string";
 str = arr; // or
-----
+---- 
+##################################################### 
+char * const str1; // str1 cannot be modified, but the character pointed to can
+const char * str2; // str1 can be modified, but the character pointed to cannot
+const char * const str3 // neither str3 nor the character pointed to can be modified.
 #####################################################
 std::string----->String
 String SS ="";
