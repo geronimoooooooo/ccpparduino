@@ -9,9 +9,9 @@
 
 void setup() {
   Serial.begin(115200);
-  delay(50);
-  M5.begin();
+  while (!Serial);
   Serial.println("This is setup!");
+  M5.begin();
   M5.Lcd.println("This is setup!");
   delay(2000);
 }
