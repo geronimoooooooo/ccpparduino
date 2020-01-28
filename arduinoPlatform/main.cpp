@@ -4,7 +4,7 @@
 #pragma endregion 
 
 #pragma region DECLARE PROTOTYPE FUNCTIONS
-void someFunction();
+//void someFunction();
 #pragma endregion
 
 void setup() {
