@@ -25,13 +25,14 @@ monitor_speed = 115200
 ;monitor_port = COM3
 ; https://docs.platformio.org/en/latest/projectconf/section_env_upload.html
 ;upload_port = COM3
-;COM7 = ttgo
+
+;ttgo = COM7
 monitor_port = COM7
 upload_port = COM7
 ;upload_speed = 921600
 board_build.partitions = no_ota.csv
 lib_deps =  
-  PubSubClient
-  Ethernet
-  M5Stack@0.2.9
+  ;PubSubClient
+  ;Ethernet
+  ;M5Stack@0.2.9
   # Using a library name
