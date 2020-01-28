@@ -32,6 +32,7 @@ upload_port = COM7
 ;upload_speed = 921600
 board_build.partitions = no_ota.csv
 lib_deps =  
+  ;LMIC-Arduino@1.5.0+arduino-3
   ;TinyGPSPlus@1.0.2
   ;PubSubClient
   ;Ethernet
