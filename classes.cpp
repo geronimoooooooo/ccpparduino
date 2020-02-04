@@ -2,7 +2,8 @@ TODO:
 https://stackoverflow.com/questions/15310846/creating-a-class-object-in-c
 https://stackoverflow.com/questions/48507427/c-when-to-use-the-new-keyword-when-creating-a-class-object
 
-
+https://www.tutorialspoint.com/cplusplus/cpp_class_member_functions.htm
+http://www.trytoprogram.com/cplusplus-programming/class-and-functions/
 
 http://www.java2s.com/Tutorial/Cpp/0180__Class/Catalog0180__Class.htm
 C++ Classes and Objects: https://www.geeksforgeeks.org/c-classes-and-objects/
