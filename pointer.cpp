@@ -31,6 +31,7 @@ void hello(const char *str) { Serial.println(str); }
 
   int zahl2 = 33;
   //p2 = zahl2; //ERROR invalid conversion from int to int*
+  //da p2 Speicheradresse hat und zahl2 ein konkreter Wert ist  
   p2 = &zahl2;
   printf ("Value von *p2: %d\n", *p2);	//33
   printf ("Value von p2: %p\n", p2);	//Speicheradresse: 35939284973
