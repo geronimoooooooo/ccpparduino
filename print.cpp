@@ -58,7 +58,7 @@ https://codeforwin.org/2015/05/list-of-all-format-specifiers-in-c-programming.ht
 %lf...double pi=3.14156 (%.2lf liefert 3.14)
 %zu...size_t unsigned
 %zd...ssize_t signed
-%p...Speicheradresse (z.B. 0x7ffdf25cef40)
+%p...Speicheradresse (z.B. 0x7ffdf25cef40) printf("%p\n", (void *)&x); // Use & to retrieve the address of a variable
 %%...prints %
 bool x = true; printf("%d\n", x); // prints 1
 printf("%s", x ? "true" : "false");...bool
