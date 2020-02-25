@@ -56,6 +56,7 @@ https://codeforwin.org/2015/05/list-of-all-format-specifiers-in-c-programming.ht
 %f... float (10.5)
 %3.2f... minimum 3 digits left and 2 digits right decimal float
 %lf...double pi=3.14156 (%.2lf liefert 3.14)
+%f...430.500000  %.2f...430.50
 %zu...size_t unsigned
 %zd...ssize_t signed
 %p...Speicheradresse (z.B. 0x7ffdf25cef40) printf("%p\n", (void *)&x); // Use & to retrieve the address of a variable
