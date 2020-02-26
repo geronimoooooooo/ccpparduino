@@ -44,6 +44,8 @@ cout << test[0][2] <<"some text";
 ###########################################
 format specifier, List of all format specifiers in C programming:
 https://codeforwin.org/2015/05/list-of-all-format-specifiers-in-c-programming.html
+https://alvinalexander.com/programming/printf-format-cheat-sheet#a-summary-of-printf-format-specifiers
+https://notgnoshi.github.io/printf/
 
 \n...new line, \t...tabulator, \v...vertical tab
 %s ...char*, char[] array   (String str.c_str(), std::string str.c_str())
@@ -53,8 +55,9 @@ https://codeforwin.org/2015/05/list-of-all-format-specifiers-in-c-programming.ht
 %ld...long (int32_t)
 %u... unsigned integer (uint8_t)
 %lu...long unsigned int (uint32_t 0 .. 4,294,967,295) millis()
+%llu...unsigned long long
 %f... float (10.5)
-%3.2f... minimum 3 digits left and 2 digits right decimal float
+%3.2f... minimum 3 digits and 2 digits right decimal float
 %lf...double pi=3.14156 (%.2lf liefert 3.14)
 %f...430.500000  %.2f...430.50
 %zu...size_t unsigned
