@@ -1,9 +1,6 @@
 ALLE MÖGLICHEN PRINT FUNCTIONS
 https://en.cppreference.com/w/c/io/fprintf
 ###########################################
-###########################################  
-  snprintf(msg, 255, "#%ld RSSI: %ld from Id: %s", msgCounter, rssi, addressChar);
-###########################################
 char greeting[6] = {'H', 'e', 'l', 'l', 'o', '\0'};
 printf("Greeting message: %s\n", greeting );
 ###########################################
@@ -57,6 +54,7 @@ https://notgnoshi.github.io/printf/
 %lu...long unsigned int (uint32_t 0 .. 4,294,967,295) millis()
 %llu...unsigned long long
 %f... float (10.5)
+scanf("%*c%c", &secondC); //* skips the first input value
 %3.2f... minimum 3 digits and 2 digits right decimal float
 %lf...double pi=3.14156 (%.2lf liefert 3.14)
 %f...430.500000  %.2f...430.50
@@ -74,7 +72,6 @@ o prints an unsigned number in octal.
 i prints a signed number in decimal.
 ###########################################
 Serial.printf("Sha256 from: %s to: %s \n",input4Sha256.c_str(), outputSha256.c_str());
-snprintf (msg, 50, "#%ld RSSI send to mqtt: %ld", value, WiFi.RSSI());
 Serial.print("Publish message: ");
 Serial.println(msg);
 ###############################################
