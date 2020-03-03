@@ -19,9 +19,11 @@ char str[4] = "C++";
 char str[100] = "C++"; //not needed to use up all the space
 
 char *carr[] = {"This is string 1", "This is string 2"}; //array of c-strings
+char *abc=carr[0];
+printf("carr[0]: %s",abc);
 
-char s[] == char *
-void display(char s[]) == void display(char *);
+char s[] == char *c
+void display(char s[]) == void display(char *c);
 #####################################################
 #include <array>
  std::array<std::string, 3> texts = {"Apple", "Banana", "Orange"};
@@ -36,7 +38,7 @@ void display(char s[]) == void display(char *);
     cout <<s.c_str();
   }
 #####################################################
-void display(char *); //deklaration
+void display(char *c); //deklaration
 display("abc11");
 void display(char cs[]){
     printf(cs);
@@ -50,11 +52,7 @@ dog2->name="NAme "+to_string(age);
 result = name + std::to_string(age);
 #####################################################
 char str1[15];
-   char str2[15];
-
    strcpy(str1, "tutorialspoint");
-   strcpy(str2, "compileonline");
-
    puts(str1);
 #####################################################
 char carr[]----> string:
@@ -67,7 +65,7 @@ str = arr; // or
 ---- 
 ##################################################### 
 char * const str1; // str1 cannot be modified, but the character pointed to can
-const char * str2; // str1 can be modified, but the character pointed to cannot
+const char * str2; // str2 can be modified, but the character pointed to cannot
 const char * const str3 // neither str3 nor the character pointed to can be modified.
 #####################################################
 std::string----->String
@@ -81,7 +79,8 @@ const char *c = std.c_str();
 
  
 String------->std::string
-std::string std(SS.c_str())
+std::string std = SS.c_str()
+//std::string std(SS.c_str())
   
 String------>const char *
 const char *c = SS.c_str()    
@@ -89,7 +88,7 @@ const char *c = SS.c_str()
  
 //make sure const char * is not NULL 
 const char * -----> std::string
-const char* s="hello";
+const char* s = "hello";
 std::string str = s; || std::string str(s);
 
 const char * ----->String
