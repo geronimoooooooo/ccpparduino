@@ -113,10 +113,14 @@ int bootCount = 2;
   Serial.println(str + st+": "+String(bootCount));
 ##########################################
   char buffer[75];
-  const char *s2 = "Connecting to new WiFi:";
-  snprintf(buffer, 75, "connecting to: %s", ssid);
+  const char *s2 = "new WiFi:";
+  snprintf(buffer, 75, "connecting to: %s", s2);
   printAddSimpleLineOfText(buffer);
 ##########################################
+  char s1[100], s2[100];	// two character arrays
+  int i, j;
+  printf ("Enter first string:\n");
+  fgets (s1, 100, stdin);	// Read string1 from stdin, of maximum length 100 
 ##########################################
 ##########################################
 ##########################################
