@@ -62,6 +62,27 @@ ptr = &a[2];  // &a[2] is the address of third element of a[5].
    cout <<&a<<" "<<a<<" *pa:"<<*pa<<" p: "<<pa<<endl;
   //0x7ffda209716c 500   *pa:500     p: 0x7ffda209716c  
 ################################################################
+Pointers are indicated by left associative asterisk (*) in the type declarations:
+ int a*a; // a is a pointer to an integer
+ char *b; // b is a pointer to a character
+ int *c[2]; // c is an array of two pointers to ints (same as int *(c[2]);
+ int (*d)[2]; // d is a pointer to an array of 2 integers
+ Pointers are simply addresses. Pointer variables may be assigned.
+ Adding 1 computes pointer to the next value by adding sizeof(X) for type X
+ General int adds to pointer (even 0 or negative values) behave in the same way
+Addresses may be computed with the ampersand (&) operator.
+ An array without an index or a struct without field computes its address:
+ int a[10], b[20]; // two arrays
+ int *p = a; // p points to first int of array a
+ p = b; // p now points to the first int of array b
+ An array or pointer with an index n in square brackets returns the nth value:
+ int a[10]; // an array
+ int *p;
+ int i = a[0]; // i is the first element of a
+ i = *a; // pointer dereference
+ p = a; // same as p = &a[0]
+ p++; // same as p = p+1; same as p=&a[1]; same as p = a+1
+ Bounds are not checked; your responsibility not to run off. Don’t assume. 
 ################################################################
 ################################################################
 ################################################################
