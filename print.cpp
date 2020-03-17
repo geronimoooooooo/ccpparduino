@@ -59,6 +59,7 @@ scanf("%*c%c", &secondC); //* skips the first input value
 %lf...double pi=3.14156 (%.2lf liefert 3.14)
 %f...430.500000  %.2f...430.50
 %zu...size_t unsigned
+%zu...sizeof(xxx)
 %zd...ssize_t signed
 %p...Speicheradresse (z.B. 0x7ffdf25cef40) printf("%p\n", (void *)&x); // Use & to retrieve the address of a variable
 %%...prints %
