@@ -134,6 +134,7 @@ char foo[][] = {"bar", "baz"};  // compile-time error.
 ########################################################
     If the array is declared in a function, then the value is undefined. int x[10]; in a function means: take the ownership of 10-int-size area of memroy without doing any initialization. If the array is declared as a global one or as static in a function, then all elements are initialized to zero if they aren't initialized already.
 ########################################################
+size_t my_array_size = sizeof(my_array) / sizeof(my_array[0]);
 int arr[3];
 int arrLength = sizeof(arr)/sizeof(int);
 for(int x=0;x<arrLength;x++){
