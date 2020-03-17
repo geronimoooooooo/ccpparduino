@@ -15,6 +15,7 @@ printf("first: %d\nsecond: %d\n", first, second);
 swapTwoNumbers(&first, &second);
 printf("first: %d\nsecond: %d\n", first, second);
 // values will be swapped
+*/
 ##########################
 // Size must be passed!
 // Otherwise, this function has no way of knowing how big the array is.
