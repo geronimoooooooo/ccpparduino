@@ -147,7 +147,13 @@ char *argv[]: array of pointers to char
 char *a[] = {"foo", "bar", "baz"};
 printf("%d\n", sizeof a / sizeof *a);
 ########################################################
-
+Passing array by reference
+int arr[1];
+ret = changeArrByRef(&arr);
+int changeArrByRef(int *arr[1]){
+  arr[0]=2;
+  return 2;
+}
 ########################################################
 ########################################################
 ########################################################
