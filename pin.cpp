@@ -9,6 +9,7 @@ pinMode(led, OUTPUT);
 
 analogRead(pin); digitalRead(pin);
 int val = analogRead(pin);
+int sensorValue = digitalRead(2);
 
 pinMode(gpio,OUTPUT);
 digitalWrite(gpio, HIGH/LOW); digitalWrite(gpio, ledState);
