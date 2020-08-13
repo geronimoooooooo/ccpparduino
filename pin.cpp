@@ -11,3 +11,17 @@ int val = analogRead(pin);
 
 pinMode(gpio,OUTPUT);
 digitalWrite(gpio, HIGH/LOW);
+
+
+void setup()
+{
+    pinMode(LED_BUILTIN, OUTPUT);
+}
+
+void loop()
+{
+    digitalWrite(LED_BUILTIN, HIGH);
+    delay(100);
+    digitalWrite(LED_BUILTIN, LOW);
+    delay(100);
+}
