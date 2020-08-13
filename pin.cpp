@@ -1,6 +1,7 @@
 Auflistung einer anderer sinnvoller Funktionen: https://randomnerdtutorials.com/esp32-adc-analog-read-arduino-ide/
 
 const int pin = 35;
+int ledState = 0; //0 LOW, 1 HIGH
 
 pinMode(pin, mode);
 pinMode(pin, INPUT);
@@ -10,7 +11,7 @@ analogRead(pin); digitalRead(pin);
 int val = analogRead(pin);
 
 pinMode(gpio,OUTPUT);
-digitalWrite(gpio, HIGH/LOW);
+digitalWrite(gpio, HIGH/LOW); digitalWrite(gpio, ledState);
 
 
 void setup()
