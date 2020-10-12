@@ -12,6 +12,11 @@ This pointer points to the same address pointed by the arrayName.
 PASS BY REFERENCE
 
 ########################################################
+char carr[] = "c-string. array of chars";
+    strcpy(carr, "fuuu");
+    Serial.println(carr);
+##############################################
+
 #define ANZAHL 10
 int arr[ANZAHL], i;
 
