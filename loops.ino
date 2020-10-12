@@ -36,3 +36,25 @@ std::array<std::string, 3> texts = {"Apple", "Banana", "Orange"};
   for (auto s : texts) {
     Serial.println(s.c_str());
   }
+################################################################
+String array[] = {"John Smith", "Susie Maye", "Tom Jones", "Sarrah Jones", "Martha Mayes", "Brenda Howard", "Dan Evens"};
+    Serial.println(array[0]);
+    for (byte i = 0; i < sizeof(array); i++)
+    {
+        Serial.println(array[i]);
+        if (i == 5)
+        {
+            break;
+        }
+    }
+############################################################
+    std::map<std::string, std::string> mapper;
+    mapper["aa"] = "uno";
+    mapper["bb"] = "due";
+    for (auto &t : mapper)
+    {
+        Serial.print("Key: ");
+        Serial.print(t.first.c_str());        
+        Serial.print("Value: ");
+        Serial.print(t.second.c_str());        
+    }
