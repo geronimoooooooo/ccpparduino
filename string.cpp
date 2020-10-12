@@ -123,3 +123,10 @@ http://www.cplusplus.com/reference/string/string/compare/
 length: https://stackoverflow.com/questions/44690087/best-way-to-get-length-of-const-char-in-c
 
 #####################################################
+char* string2char(String command){
+    if(command.length()!=0){
+        char *p = const_cast<char*>(command.c_str());
+        return p;
+    }
+}
+####################################################
