@@ -1,0 +1,16 @@
+U8X8_SH1107_64X128_4W_HW_SPI u8x8(14, /* dc=*/ 27, /* reset=*/ 33);
+bool mpu9250_exis = false;
+void mpu9250_test() {
+    uint8_t data = 0;
+    Wire.beginTransmission(0x68);         
+    Wire.write(0x75);                     
+    Wire.endTransmission(true);
+    Wire.requestFrom(0x68, 1);  
+    data = Wire.read();                   
+
+    Serial.print("mpu9250 addr: ");
+    Serial.println(data, HEX);
+    if(data == 0x71) {
+        mpu9250_exis = true;
+    }
+}
