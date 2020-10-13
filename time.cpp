@@ -132,5 +132,9 @@ unsigned long timePassed; timePassed = millis(); ( %lu)
   if (compareTime(timeLastTimestamp, millis()))
     Serial.printf("Enough time passed! %lu", (millis() - timeLastTimestamp));
 ############################################################################################################
+currentMillis = millis();
+  if (currentMillis - sentMillis > interval) {
+    sendobject();
+  }
 ############################################################################################################
 ############################################################################################################
