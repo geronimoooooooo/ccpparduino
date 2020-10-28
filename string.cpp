@@ -130,3 +130,18 @@ char* string2char(String command){
     }
 }
 ####################################################
+substring
+ const char *st1 = "empty csv";
+ Serial.printf("csv: %s \n", st1);
+    
+    std::string myString(st1);
+    std::vector<uint8_t> myVector(myString.begin(), myString.end());
+    uint8_t *p = &myVector[0];
+
+     if (ttn.sendBytes(p, myVector.size())) {
+       //   Serial.printf("Temp: %f TTN_CayenneLPP: %d %x %02X%02X\n", nb,
+       //   lpp.getBuffer()[0], lpp.getBuffer()[1],
+       //       lpp.getBuffer()[2], lpp.getBuffer()[3]);
+
+       Serial.printf("msg: %s \n", myString.c_str());
+     }
