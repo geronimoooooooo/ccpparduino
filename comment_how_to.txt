@@ -1,6 +1,5 @@
 YES
-
-/** adsfasdf.  
+/** Function description.  
   @param abc Name of user.
   @param xy Age of user.
  */
