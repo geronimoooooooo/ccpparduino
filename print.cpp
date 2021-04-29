@@ -51,7 +51,7 @@ https://notgnoshi.github.io/printf/
 %3d ...integer with minimum of length 3 digits (right justifies text)  
 %ld...long (int32_t)
 %u... unsigned integer (uint8_t)
-%lu...long unsigned int (uint32_t 0 .. 4,294,967,295) millis()
+%zu %lu...long unsigned int (uint32_t 0 .. 4,294,967,295) millis()
 %llu...unsigned long long
 %f... float (10.5)
 scanf("%*c%c", &secondC); //* skips the first input value
