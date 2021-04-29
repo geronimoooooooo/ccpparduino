@@ -65,6 +65,9 @@ scanf("%*c%c", &secondC); //* skips the first input value
 %%...prints %
 bool x = true; printf("%d\n", x); // prints 1
 printf("%s", x ? "true" : "false");...bool
+size_t sz;
+printf("%zu\n", sz);  /* C99 version */
+printf("%lu\n", (unsigned long)sz);  /* common C89 version */
 
 u prints an unsigned number in decimal.
 d prints a signed number in decimal.
