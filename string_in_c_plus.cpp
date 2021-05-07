@@ -2,7 +2,7 @@ String...sequence of char
 c-string...pointer to null terminated char arr
 
 #include <iostream>
-#include <string>
+#include <string> http://www.cplusplus.com/reference/string/string/
 #include <cctype> hat 10 function bezüglich strings https://www.programiz.com/cpp-programming/library-function/cctype
 #include <cstring>
 using namespace std;
@@ -20,8 +20,19 @@ string::size_type
 
 std::string str;
 const char *c = str.c_str(); //often needed for a function
+cout<<"enter your name"<<endl; 
+getline(cin, firstName);
 
+==pointer==
+pointer ist ein integer, welcher eine Speicheradresse als Wert hat  
+void* p = 0/NULL/nullptr; pointer ist einfach invalid
 
+int var = 8;
+int* ptr = &var;
+*ptr = 10;
+
+char* buffer = new char[8]; ptr zeigt auf die 1. Stelle des 8 Bytes arrays
+memset(buffer,0,8); 8 Bytes des Speichers werden mit 0 befüllt
 
 https://www.geeksforgeeks.org/how-to-convert-c-style-strings-to-stdstring-and-vice-versa/
 
