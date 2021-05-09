@@ -1,5 +1,6 @@
 String...sequence of char
-c-string...pointer to null terminated char arr
+A c-string is a pointer to a NULL terminated array of chars.
+char myArray[2]; myArray[0]='a'; myArray[1]='b'; ist kein c-string, da '\0' zum NULL terminieren fehlt; erst mit myArray[2]='\0' würde passen; char myArray[3]; updaten
 
 #include <iostream>
 #include <string> http://www.cplusplus.com/reference/string/string/
