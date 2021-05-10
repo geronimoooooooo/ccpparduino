@@ -2,6 +2,17 @@ String...sequence of char
 A c-string is a pointer to a NULL terminated array of chars.
 char myArray[2]; myArray[0]='a'; myArray[1]='b'; ist kein c-string, da '\0' zum NULL terminieren fehlt; erst mit myArray[2]='\0' würde passen; char myArray[3]; updaten
 
+http://www.cplusplus.com/forum/general/41912/
+https://stackoverflow.com/questions/1195675/convert-a-char-to-stdstring
+https://stackoverflow.com/questions/39324272/how-to-convert-char-to-stdstring
+https://www.codegrepper.com/code-examples/cpp/convert+char+array+to+string+c%2B%2B
+https://www.codegrepper.com/code-examples/cpp/convert+array+char+to+string+c%2B%2B
+https://www.codegrepper.com/code-examples/cpp/convert+char%2A+to+string+c%2B%2B
+
+https://forum.arduino.cc/t/weird-output-when-converting-character-array-to-a-string/331551/3
+https://forum.arduino.cc/t/serial-monitor-displays-strange-characters/193118/13
+https://forum.arduino.cc/t/strange-characters-on-serial-monitor/314714
+
 #include <iostream>
 #include <string> http://www.cplusplus.com/reference/string/string/
 #include <cctype> hat 10 function bezüglich strings https://www.programiz.com/cpp-programming/library-function/cctype
