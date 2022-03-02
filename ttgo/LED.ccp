@@ -1,5 +1,7 @@
 //ttgo t-beam v1.1
-//rote LED bei IO4, welche durchgehend leuchtet, wenn t-beam eingeschalten. Leuchtet auch in deep sleep.
+//rote LED bei IO4, welche durchgehend schwach leuchtet, wenn t-beam eingeschalten. Leuchtet auch in deep sleep.
+//hell blaue LED bei CHG, wenn t-beam mit USB Kabel angeschlossen
+//rote LED neben GPS, die bei aktiven GPS Signal blinkt
 
 #include <Arduino.h>
 
